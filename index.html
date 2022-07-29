@@ -3,13 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <title>Assignment</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
+        <script>
+            let age = prompt("How old are you?")
+            if (age >= "18") {
+                alert("You are allowed")
+                let user=prompt ("Who are you?")
+                alert(`Nice to meet you ${user}, tread carefully!`);
+            }
+            else {
+                alert("Get out!");
+                window.close();
+            }
+        </script>
         <h1>Odin Recipes</h1>
         <img src="./img/cook_book.jpg" alt="Handwritten cookbook">
         <ul>
-            <li><a href="./recipes/brownie.html">Brownie</a></li>
+            <li class="box"><a href="./recipes/brownie.html">Brownie</a></li>
             <li><a href="./recipes/pasta_carbonara.html">Pasta Carbonara</a></li>
             <li><a href="./recipes/marrocan_couscous.html">Marrocan Couscous</a></li>
         </ul>        
