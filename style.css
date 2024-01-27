@@ -1,22 +1,131 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-    border: 1px solid red;
+@font-face {
+    font-family: roustel;
+    src: url(/assets/roustel.ttf) format(truetype);
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: roustel, sans-serif;
+
+    --letterColor: #2e2e2e;
+    --buttonColor: white;
+}
+
+body{
+    background-image: url(/assets/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface\ 1.jpg);
+
+    font-size: 1.6rem;
+    color: var(--letterColor);
+}
+
+main{
+    max-width: 33rem;
+
+    margin-inline: auto;
+
+    padding: 5.6rem 4rem;
+    box-sizing: content-box;
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 3.2rem;
 }
 
+img{
+    width: 100%;
+    max-height: 25rem;
 
-.index a{
+    object-fit: cover;
+
+    margin-block: 3.2rem;
+}
+
+h1, strong{
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 3.6rem;
+}
+
+p, li{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+ul, ol{
+    padding-left: 2.4rem;
+}
+
+ul{
+    margin-bottom: 3.2rem;
+}
+
+button{
+    font-family: roustel, sans-serif;
+    background-color: #a54328;
+
+    
+
+    border: 0;
+    border-radius: 0.6rem;
+    padding: 0.8rem 1.2rem;
+
+    margin-top: 3.2rem;
+}
+
+a{
     text-decoration: none;
+
+    font-size: 1.6rem;
 }
 
-.recipeName a{
-    text-decoration: none;
+p a{
+    color: var(--letterColor);
 }
 
+button a{
+    color: var(--buttonColor);
+}
 
+@media(min-width: 1120px){
+    main{
+        flex-direction: row;
+        max-width: fit-content;
+        gap: 16rem;
+
+        padding: 9rem 6rem;
+    }
+
+    .recipe{
+        max-width: 43.5rem;
+    }
+
+    .ingredients{
+        max-width: 52.5rem;
+    }
+
+    h1, strong{
+        font-size: 4rem;
+        font-weight: normal;
+        line-height: 5rem;
+    }
+
+    p, li{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    button{
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+}
