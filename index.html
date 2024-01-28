@@ -2,6 +2,10 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minhas Receitas</title>
@@ -10,9 +14,24 @@
 </head>
 
 <body>
-    <main>
+    <header>
+        <h1 class="title">Minhas receitas</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#brownie">Brownie</a></li>
+                <li><a href="#carbonara">Macarrão Carbonara</a></li>
+                <li><a href="#cuscuzMarroquino">Cuscuz Marroquino</a></li>
+                <li><a href="#panquecaAmericana">Panqueca Americana</a></li>
+            </ul>            
+        </nav>
+    </header>
+
+    <div class="divider"></div>
+
+    <main>      
         <div class="recipe">
-            <h1>Brownie</h1>
+            <section id="brownie"><h1>Brownie</h1></section>
             <img class="image" src="./assets/brownie.jpg" alt="Foto de pedaços de brownie.">
             <p>Esta receita irá produzir um brownie denso, cremoso, com um sabor intenso de chocolate, com uma crosta
                 quebradiça que irá adocicar seu dia.</p>
@@ -21,40 +40,41 @@
         <div class="ingridients">
             <strong>Ingredientes:</strong>
             <ul>
-                <li>200 grama de chocolate meio amargo</li>
-                <li>115 grama de manteiga</li>
-                <li>1 cup de açúcar granulado</li>
-                <li>1/2 cup de açúcar mascavo</li>
+                <li>200 gramas de chocolate meio amargo</li>
+                <li>115 gramas de manteiga</li>
+                <li>200 gramas de açúcar granulado</li>
+                <li>100 gramas de açúcar mascavo</li>
                 <li>3 ovos médios</li>
-                <li>Salt - 1/4 tablespoon</li>
+                <li>Uma pitada de sal</li>
                 <li>1 colher de chá de assência de baunilha</li>
-                <li>All-purpose flour - 1/2 cup</li>
-                <li>Cocoa powder - 1/4 cup</li>
+                <li>65 gramas de farinha de trigo</li>
+                <li>40 gramas de cacao em pó</li>
             </ul>
 
             <strong>Modo de Preparo:</strong>
             <ol>
                 <li>Pré-aqueça o forno a 180 graus;</li>
                 <li>Unte uma forma e coloque o papel manteiga, também levemente untado;</li>
-                <li>Derreta o chocolate com a mantega em banho Maria, quando estiver derretido e totalmente incorporado
+                <li>Derreta o chocolate com a manteiga em banho Maria, quando estiver derretido e totalmente incorporado
                     reserve e deixe esfriar;</li>
                 <li>Em uma vasilha adicione o açúcar granulado e o açúcar mascavo e então adicione os ovos, um por um,
-                    misturando bem até que todo o
-                    açúcar seja dissolvido e você tenha uma mistura cremosa;</li>
+                    misturando bem até que todo o açúcar seja dissolvido e você tenha uma mistura cremosa;</li>
                 <li>Acrescente a essência de baunilha e o sal;</li>
                 <li>Adicione o chocolate derretido e misture bem até incorporar;</li>
                 <li>Peneire a farinha e o cacau em pó na mistura, delicadamente incorpore os ingredientes secos e
                     molhados, de preferência utilizando
                     uma espatula de silicone;</li>
                 <li>Passe a massa para a forma (você pode jogar pedacinhos de chocolate meio amargo por cima da massa)
-                    e asse a 180 graus por aproximadamente 35 minutos;</li>
+                    e asse a 180 graus por aproximadamente 35 minutos.</li>
             </ol>
-        </div>
+        </div>        
     </main>
+
+    <div class="divider"></div>
 
     <main>
         <div class="recipe">
-            <h1>Macarrão carbonara</h1>
+            <section id="carbonara"><h1>Macarrão Carbonara</h1></section>
             <img class="image" src="./assets/carbonara.jpg" alt="Um prato de macarrão carbonara.">
             <p>Este é um prato intenso e saboroso, com um molho untuoso e cremoso, tem poucos ingredientes mas pode ser
                 desafiador. Alguns dos
@@ -95,12 +115,14 @@
                     massa fique al dente;</li>
                 <li>Adicione a carne e um pouco de pimenta do reino moída na hora, ajuste o sal se necessário.</li>
             </ol>
-        </div>
+        </div>        
     </main>
+
+    <div class="divider"></div>        
 
     <main>
         <div class="recipe">
-            <h1>Cuscuz Marroquino</h1>
+            <section id="cuscuzMarroquino"><h1>Cuscuz Marroquino</h1></section>
             <img class="image" src="./assets/cuscuzmarroquino.jpg" alt="Prato de cuscuz marroquino.">
             <p>Este é um prato leve, refrescante, fácil de preparar e combina muito bem com frango grelhado e creme
                 azedo. Não existe somente uma maneira de preparar cuzcuz marroquino, essa é apenas uma delas, uma
@@ -139,15 +161,19 @@
                     Adicione as raspas e o suco do limão siciliano a gosto;</li>
                 <li>Adicione a salsinha, hortelã e as castanhas, misture tudo e ajuste o tempero com sal e pimenta do reino.</li>
             </ol>
-        </div>
+        </div>        
     </main>
+
+    <div class="divider"></div>
 
     <main>
         <div class="recipe">
-            <h1>Panqueca Americana</h1>
+            <section id="panquecaAmericana"><h1>Panqueca Americana</h1></section>
             <img class="image" src="/assets/panqueca-americana.jpg"
-                alt="Desenho de uma pilha de panquecas com mantega e xarope de bordo.">
-            <p></p>
+                alt="Desenho de uma pilha de panquecas com manteiga e xarope de bordo.">
+            <p>Essa receita vai te dar panquecas leves, fofinhas e aeradas, que podem ser servidas com manteiga e mel (ou xarope de bordo 
+                caso seja início do mês).
+            </p>
         </div>
 
         <div class="ingridients">
@@ -155,22 +181,30 @@
 
             <strong>Ingredientes:</strong>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>375 gramas de farinha de trigo</li>
+                <li>50 gramas de açúcar granulado</li>
+                <li>1 1/2 de sal</li>
+                <li>1 colher de fermento</li>
+                <li>1 1/2 de bicarbonato de sódio</li>
+                <li>550 gramas de leite</li>
+                <li>55 gramas de óleo vegetal</li>
+                <li>1 colher de essência de baunilha</li>
+                <li>58 gramas de vinagre de maça</li>
+                <li>3 ovos</li>
             </ul>
 
             <strong>Modo de Preparo:</strong>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Em um recipiente adicione todos os ingredientes secos e misture para que fiquem bem distribuídos;</li>
+                <li>Em outro recipiente adicione os ingredientes molhados e misture para que fiquem bem incorparados;</li>
+                <li>Adiciono os ingredientes molhados aos secos e misture delicadamente até que fique tudo combinado, proém,
+                    a massa não precisa ficar lisa, é interessante que fiquem alguns gruminhos;
+                </li>
+                <li>Em uma frigideira antiaderente adicione manteiga e deixe derreter, com uma colher pege uma quantidade de massa
+                    e adicione a frigideira, evite mexer muito a massa nesse momento;</li>
+                <li>Aguarde até que algumas bolhas comecem a estourar na massa em cima da panqueca, então vire e deixe mais alguns minutos
+                    para terminar de assar.
+                </li>
             </ol>
         </div>
 

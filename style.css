@@ -14,10 +14,9 @@
 
 :root{
     font-size: 62.5%;
-    font-family: roustel, sans-serif;
+    font-family: 'Dawning of a New Day', cursive;
 
     --letterColor: #2e2e2e;
-    --buttonColor: white;
 }
 
 body{
@@ -25,6 +24,51 @@ body{
 
     font-size: 1.6rem;
     color: var(--letterColor);
+}
+
+header{
+    max-width: 33rem;
+
+    margin-inline: auto;
+
+    padding-top: 5.6rem;
+}
+
+.title{
+    font-size: 4rem;
+
+    text-align: center;
+
+    padding-bottom: 4rem;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+
+    font-size: 1.6rem;
+
+    color: var(--letterColor);
+}
+
+.divider{
+    height: 1px;
+    max-width: 33rem;
+
+    border-bottom: 2px solid var(--letterColor);
+
+    max-width: 33rem;
+
+    margin-inline: auto;
+
+    padding: 5rem 5rem;
+    box-sizing: content-box;
+
+    display: flex;
+    flex-direction: column;
 }
 
 main{
@@ -68,34 +112,32 @@ ul{
     margin-bottom: 3.2rem;
 }
 
-button{
-    font-family: roustel, sans-serif;
-    background-color: #a54328;
-
-    
-
-    border: 0;
-    border-radius: 0.6rem;
-    padding: 0.8rem 1.2rem;
-
-    margin-top: 3.2rem;
-}
-
-a{
-    text-decoration: none;
-
-    font-size: 1.6rem;
-}
-
-p a{
-    color: var(--letterColor);
-}
-
-button a{
-    color: var(--buttonColor);
-}
-
 @media(min-width: 1120px){
+    .title{
+        font-size: 5rem;
+    
+        text-align: center;
+    
+        padding-bottom: 4rem;
+    }
+
+    .divider{
+        height: 1px;
+        max-width: 33rem;
+    
+        border-bottom: 2px solid var(--letterColor);
+    
+        max-width: 72rem;
+    
+        margin-inline: auto;
+    
+        padding: 5rem 5rem;
+        box-sizing: content-box;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
     main{
         flex-direction: row;
         max-width: fit-content;
@@ -112,6 +154,14 @@ button a{
         max-width: 52.5rem;
     }
 
+header h1{
+    font-size: 4rem;
+
+    text-align: center;
+
+    padding-bottom: 4rem;
+}
+
     h1, strong{
         font-size: 4rem;
         font-weight: normal;
@@ -123,9 +173,4 @@ button a{
         line-height: 2.5rem;
     }
 
-    button{
-        padding: 1rem 2rem;
-        font-size: 1.4rem;
-        line-height: 2.4rem;
-    }
 }
