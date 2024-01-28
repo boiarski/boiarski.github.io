@@ -154,14 +154,6 @@ ul{
         max-width: 52.5rem;
     }
 
-header h1{
-    font-size: 4rem;
-
-    text-align: center;
-
-    padding-bottom: 4rem;
-}
-
     h1, strong{
         font-size: 4rem;
         font-weight: normal;
@@ -169,7 +161,7 @@ header h1{
     }
 
     p, li{
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 2.5rem;
     }
 
