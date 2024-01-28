@@ -22,7 +22,7 @@
 body{
     background-image: url(/assets/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface\ 1.jpg);
 
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--letterColor);
 }
 
@@ -49,22 +49,28 @@ nav li{
 a{
     text-decoration: none;
 
-    font-size: 1.6rem;
+    font-size: 2rem;
 
     color: var(--letterColor);
+
+    transition: 0.3s ease-out;
+
+    display: block;
+}
+
+a:hover{
+    font-size: 2.5rem;
 }
 
 .divider{
     height: 1px;
-    max-width: 33rem;
+    max-width: 29rem;
 
     border-bottom: 2px solid var(--letterColor);
 
-    max-width: 33rem;
-
     margin-inline: auto;
 
-    padding: 5rem 5rem;
+    padding: 1rem;
     box-sizing: content-box;
 
     display: flex;
@@ -100,7 +106,7 @@ h1, strong{
 }
 
 p, li{
-    font-size: 1.4rem;
+    font-size: 2rem;
     line-height: 1.8rem;
 }
 
@@ -121,9 +127,20 @@ ul{
         padding-bottom: 4rem;
     }
 
+    a{
+        font-size: 2.5rem;
+
+        transition: 0.3s ease-out;
+
+        display: block;
+    }
+
+    a:hover{
+        font-size: 3rem;
+    }
+
     .divider{
         height: 1px;
-        max-width: 33rem;
     
         border-bottom: 2px solid var(--letterColor);
     
@@ -131,7 +148,7 @@ ul{
     
         margin-inline: auto;
     
-        padding: 5rem 5rem;
+        padding: 1rem;
         box-sizing: content-box;
     
         display: flex;
