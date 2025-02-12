@@ -8,7 +8,8 @@
 }
 
 :root{
-    font-size: 62.5%;
+    font-size: 62.5%; 
+    font-family: "Dancing Script", serif;
 
     --letterColor: #2e2e2e;
 }
@@ -16,8 +17,7 @@
 body{
     background-image: url(/assets/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface\ 1.jpg);
 
-    
-    font-family: "Dancing Script", serif;
+   
     font-size: 1.8rem;
     color: var(--letterColor);
 }
