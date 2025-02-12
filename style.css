@@ -7,14 +7,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-    font-family: roustel;
-    src: url(/assets/roustel.ttf) format(truetype);
-}
-
 :root{
     font-size: 62.5%;
-    font-family: 'Dawning of a New Day', cursive;
+    font-family: "Dancing Script", serif;
 
     --letterColor: #2e2e2e;
 }
